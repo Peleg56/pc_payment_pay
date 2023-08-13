@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Card Payment</title>
+</head>
+<body>
+    <form id="paymentForm" action="/process_payment" method="post">
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" maxlength="16" placeholder="Enter card number" required>
+        <br>
+
+        <label for="cardName">Cardholder Name:</label>
+        <input type="text" id="cardName" name="cardName" placeholder="Enter cardholder name" required>
+        <br>
+
+        <label for="expiration">Expiration Date:</label>
+        <input type="text" id="expiration" name="expiration" placeholder="MM / YY" maxlength="5" required>
+        <br>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" maxlength="3" placeholder="Enter CVV" required>
+        <br>
+
+        <input type="hidden" id="amount" name="amount" value="1999.99">
+        <!-- Hidden input to store the payment amount -->
+
+        <button type="submit">Pay - $1999.99</button>
+    </form>
+</body>
+</html>
